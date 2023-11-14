@@ -7,10 +7,10 @@ import characters, { Rick } from './data.js';
 function App() {
    return (
       <div className='App'>
-         <SearchBar onSearch={(characterID) => window.alert(characterID)} />
+         <SearchBar onSearch={(characterID) => alert(characterID)} />
          <Cards characters={characters} />
          <Card
-            id={Rick.id}
+            id={characters.id}
             name={Rick.name}
             status={Rick.status}
             species={Rick.species}

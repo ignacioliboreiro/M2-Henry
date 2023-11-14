@@ -1,4 +1,4 @@
-(function () {
+
   window.EventEmitter = EventEmitter;
 
   // our EventEmitter constructor function
@@ -37,4 +37,7 @@
       listener.apply(null, remainingArgs);
     });
   };
-})();
+
+
+  export default EventEmitter;
+  // module.exports = EventEmitter
